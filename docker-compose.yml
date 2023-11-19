@@ -3,7 +3,7 @@ services:
   chatgpt-next-web:
     profiles: ["no-proxy"]
     container_name: chatgpt-next-web
-    image: gosuto/chatgpt-next-web-langchain
+    image: n3ap/chatgpt-next-web-langchain
     ports:
       - 3000:3000
     environment:
@@ -20,7 +20,7 @@ services:
   chatgpt-next-web-proxy:
     profiles: ["proxy"]
     container_name: chatgpt-next-web-proxy
-    image: gosuto/chatgpt-next-web-langchain
+    image: n3ap/chatgpt-next-web-langchain
     ports:
       - 3000:3000
     environment:
