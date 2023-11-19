@@ -55,7 +55,7 @@ export class DallEAPIWrapper extends StructuredTool {
           Authorization: `Bearer ${this.apiKey}`,
         },
         body: JSON.stringify({
-          model: "SDXL",
+          model: "sdxl",
           prompt: prompt,
           n: this.n,
           size: size,
